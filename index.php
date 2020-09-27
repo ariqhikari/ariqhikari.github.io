@@ -52,7 +52,7 @@ $desc2 = "Perkenalkan nama saya Ariq Hikari Hidayat. Saya adalah siswa SMK 4 Ban
         </div>
         <div class="thumbnail">
             <div class="img-heading">
-                <img src="Media/about.png" alt="about">
+                <img src="about.png" alt="about">
                 <div class="social-media">
                     <a href="https://www.facebook.com/xabi.alanso.77/" target="_blank" rel="noopener noreferrer">
                         <i class="fab fa-facebook"></i>
