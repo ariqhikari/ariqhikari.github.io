@@ -63,7 +63,7 @@ $desc2 = "Perkenalkan nama saya Ariq Hikari Hidayat. Saya adalah siswa SMK 4 Ban
                     <a href="https://github.com/ariqhikari" target="_blank" rel="noopener noreferrer">
                         <i class="fab fa-github"></i>
                     </a>
-                    <a href="https://www.linkedin.com/in/ariq-h-ab33191a0/" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.linkedin.com/in/ariqhikari/" target="_blank" rel="noopener noreferrer">
                         <i class="fab fa-linkedin-in"></i>
                     </a>
                 </div>
