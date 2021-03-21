@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    z-index: -1;
+    background-position: right;
+    background-size: cover;
+}
+
+body {
+    font-family: 'Montserrat',
+        sans-serif;
+    background-color: #F9F9F9;
+}
+
+.dark,
+.dark * {
+    color: #e6e6e6 !important;
+    border-color: #e6e6e6;
+}
+
+.dark::before {
+    filter: grayscale(100%) brightness(20%);
+}
+
+.dark body {
+    background-color: #222;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 90%;
+    margin: 9% auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
+    margin: 25px 0;
+}
+
+nav .container {
+    margin: auto;
+}
+
+.toggle-dark {
+    display: flex;
+    align-items: center;
+}
+
+nav .icon-dark {
+    margin-left: 15px;
+    font-size: 1.2em;
+}
+
+.bio {
+    order: 2;
+    flex: 1;
+    margin-top: 25px;
+    max-width: 100%;
+}
+
+.title h1 {
+    font-weight: 400;
+    font-size: 3em;
+}
+
+.title h3 {
+    font-weight: 500;
+    color: #6B6B6B;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.title h3::after {
+    content: "";
+    width: 10%;
+    height: 5px;
+    display: block;
+    background-color: #E94F56;
+    margin-top: 10px;
+}
+
+.desc {
+    color: #757575;
+    line-height: 30px;
+}
+
+.desc span {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.cta {
+    display: flex;
+    margin-top: 30px;
+    font-weight: 500;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    transition: 0.25s;
+}
+
+.btn-primary {
+    width: 180px;
+    height: 50px;
+    color: white;
+    margin-right: 20px;
+    box-shadow: 0 3px 6px #eb5d6ea8;
+    background-image: linear-gradient(#E95741, #EB5D6D);
+}
+
+.btn-primary:hover {
+    background-image: linear-gradient(#d45440, #da5564);
+}
+
+.btn-secondary {
+    width: 130px;
+    height: 50px;
+    color: #EB5D6D;
+    box-shadow: 0 3px 6px rgba(128, 128, 128, 0.212);
+    background: white;
+}
+
+.btn-secondary:hover {
+    background: rgb(243, 243, 243);
+}
+
+.dark .btn-secondary {
+    color: white;
+    background: #181818;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.212);
+}
+
+.dark .btn-secondary:hover {
+    background: #141414;
+}
+
+.thumbnail {
+    order: 1;
+    flex: 1;
+    padding-top: 20px;
+}
+
+.img-heading {
+    width: 100%;
+    margin: auto;
+}
+
+.img-heading img {
+    width: 100%;
+}
+
+.social-media {
+    width: 100%;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.social-media a {
+    font-size: 1.5em;
+    color: #999999;
+    margin: 0 15px;
+    transition: 0.25s;
+    opacity: 0.7;
+}
+
+.social-media a:hover {
+    opacity: 1;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 46px;
+    height: 20px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    left: 2px;
+    bottom: 3px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #2196F3;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+@media (min-width: 768px) {
+    html {
+        overflow-y: hidden;
+    }
+
+    html::before {
+        background-image: url("../img/wave.svg");
+    }
+
+    .container {
+        width: 80%;
+    }
+
+    .bio {
+        order: 1;
+    }
+
+    .title h1 {
+        font-size: 4em;
+    }
+
+    .img-heading {
+        width: 100%;
+    }
+}
+
+@media (min-width: 992px) {
+    .img-heading {
+        width: 70%;
+    }
+}
